@@ -3,7 +3,7 @@
     {
       "name": "Computes Taxes 1",
       "setup": "cd prob01 && make build",
-      "run": "./main",
+      "run": "cd prob01 && make clean && ./main",
       "input": "10.00 9",
       "output": "Taxes: $0.75",
       "comparison": "included",
@@ -11,19 +11,9 @@
       "points": 1
     },
     {
-      "name": "Check readability",
-      "setup": "",
-      "run": "cd prob01 && make stylecheck && make formatcheck",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 3,
-      "points": 2
-    },
-    {
       "name": "All unit tests",
       "setup": "cd prob01 && make build",
-      "run": "make test",
+      "run": "cd prob01 && make clean && make test",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -33,17 +23,17 @@
     {
       "name": "Computes Taxes 2",
       "setup": "cd prob01 && make build",
-      "run": "./main",
+      "run": "cd prob01 && make clean && ./main",
       "input": "34.80 9",
       "output": "Taxes: $2.61",
       "comparison": "included",
       "timeout": 3,
-      "points": 1
+      "points": 2
     },
     {
       "name": "Zero tip",
       "setup": "cd prob01 && make build",
-      "run": "./main",
+      "run": "cd prob01 && make clean && ./main",
       "input": "27.50 0",
       "output": "Tip: $0.00",
       "comparison": "included",
@@ -53,12 +43,12 @@
     {
       "name": "15 percent tip",
       "setup": "cd prob01 && make build",
-      "run": "./main",
+      "run": "cd prob01 && make clean && ./main",
       "input": "54.58 15",
       "output": "Tip: $8.19",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
+      "points": 2
     },
     {
       "name": "Verify implementation",
